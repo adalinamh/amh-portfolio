@@ -1,0 +1,27 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+
+<circle cx="250" cy="250" r="200" fill="#fbf4e6" stroke="#fb9445" stroke-width="10"/>
+<circle cx="250" cy="250" r="120" fill="#f5b833" stroke="#fb9445" stroke-width="10"/>
+<polygon points="127,290 183,190 203,190 250,250 297,190 317,190 380,300 368,340 310,238 250,305 190,238 130,340 " fill="#02268a"/>
+ 
+<polygon points="145,215 180,215 200,170 300,170 320,215 355,215 280,25 220,25" fill="#e91f1f"/>
+<polygon points="250,58 200,170 300,170" fill="#fbf4e6"/>
+<rect x="190" y="150" width="120" height="25" fill="#e91f1f"/>
+<circle cx="209" cy="120" r="8" fill="#111"/>
+<circle cx="290" cy="120" r="8" fill="#111"/>
+<polyline points="228,158 250,170 272,158" fill="none" stroke="#111" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+ 
+
+<polygon points="130,460 180,440 220,308 190,264 " fill="#2e46bf"/>
+<polygon points="190,380 330,380 330,350 180,350 " fill="#2e46bf"/>
+<polygon points="320,440 370,460 313,264 280,308 " fill="#2e46bf"/>
+  
+  
+
+  
+
+</svg>
+ 
+
+

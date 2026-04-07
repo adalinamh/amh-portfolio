@@ -1,0 +1,180 @@
+:root {
+  --portfolio-bg: #F3EFE4;
+  --portfolio-blush: #F8CABA;
+  --portfolio-accent: #E1903E;
+  --portfolio-accent-strong: #9C4A14;
+  --portfolio-accent-ui: #B65A1B;
+  --portfolio-accent-deep: #4E260C;
+  --portfolio-ink: #131313;
+  --portfolio-muted: #5F5F5F;
+  --portfolio-shadow: #2D473E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--portfolio-bg);
+  color: var(--portfolio-ink);
+}
+
+.navbar {
+  background-color: var(--portfolio-accent) !important;
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+
+.navbar-menu {
+  background-color: var(--portfolio-accent) !important;
+}
+
+.navbar-item,
+.navbar-item a {
+  background-color: transparent !important;
+}
+
+.navbar-burger {
+  color: var(--portfolio-accent-deep);
+}
+
+.bouton-section .button {
+  border: 2px solid var(--portfolio-accent-deep) !important;
+  color: var(--portfolio-accent-deep) !important;
+  background: transparent !important;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease, background 0.3s ease;
+  z-index: 0;
+}
+
+.bouton-section .button::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: var(--portfolio-bg);
+  transition: height 0.3s ease;
+  z-index: -1;
+}
+
+.bouton-section .button:hover::before {
+  height: 100%;
+}
+
+.bouton-section .button:hover {
+  background: var(--portfolio-bg) !important;
+  color: var(--portfolio-accent-deep) !important;
+}
+
+.hero-background {
+  background-image: url('../media/images/frond-hero.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-body-custom {
+  align-items: center;
+  padding-top: 27%;
+  padding-bottom: 5%;
+}
+
+.hero-intro {
+  margin-left: 55%;
+  text-align: center;
+}
+
+.titre-hero {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+.hero-body .button {
+  border: 2px solid var(--portfolio-accent-deep);
+  color: var(--portfolio-accent-deep);
+  background: rgba(243, 239, 228, 0.95);
+  font-weight: 700;
+  transition: background 0.3s ease, color 0.3s ease;
+  border-radius: 999px;
+}
+
+.hero-body .button:hover {
+  background: var(--portfolio-accent-deep);
+  color: var(--portfolio-bg);
+}
+
+.footer-custom {
+  background-color: var(--portfolio-blush);
+  border-radius: 40px 40px 0 0;
+  padding: 3rem 1.5rem 0;
+  margin-top: 4rem;
+}
+
+.footer-custom .texte-section,
+.footer-custom a,
+.footer-custom .icon,
+.footer-custom .has-text-grey {
+  color: var(--portfolio-accent-deep) !important;
+}
+
+.footer-custom a {
+  text-underline-offset: 0.18em;
+}
+
+.footer-custom a:hover {
+  color: var(--portfolio-accent-deep) !important;
+  text-decoration-color: var(--portfolio-accent-strong);
+  text-decoration-thickness: 2px;
+}
+
+.footer-wave-line {
+  width: 100%;
+  height: 12px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 12'%3E%3Cpath d='M0,6 C180,12 360,0 540,6 C720,12 900,0 1080,6 C1260,12 1380,0 1440,6' stroke='%23243b6e' stroke-width='5' fill='none'/%3E%3C/svg%3E") repeat-x;
+  background-size: 400px 12px;
+  margin-top: 2rem;
+}
+
+.inline-gap-sm {
+  gap: 0.5rem;
+}
+
+.modal-card-custom {
+  width: 90%;
+  max-width: 1100px;
+}
+
+.modal-cover-wrap {
+  position: relative;
+}
+
+.modal-cover-image {
+  object-fit: cover;
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+}
+
+.modal-cover-title {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding-inline: 1rem;
+  text-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.text-relaxed {
+  line-height: 2;
+}
+
+.has-text-grey {
+  color: var(--portfolio-muted) !important;
+}
