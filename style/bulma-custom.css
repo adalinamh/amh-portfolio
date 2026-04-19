@@ -8,14 +8,31 @@
   --portfolio-ink: #131313;
   --portfolio-muted: #5F5F5F;
   --portfolio-shadow: #2D473E;
+  color-scheme: light;
 }
 
 html {
   scroll-behavior: smooth;
+  color-scheme: light;
+  background-color: var(--portfolio-bg);
 }
 
 body {
   background-color: var(--portfolio-bg);
+  color: var(--portfolio-ink);
+  min-height: 100vh;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+.title,
+.subtitle,
+.content,
+.modal-card-title {
   color: var(--portfolio-ink);
 }
 
@@ -149,6 +166,12 @@ body {
 .modal-card-custom {
   width: 90%;
   max-width: 1100px;
+}
+
+.modal-card-head,
+.modal-card-body {
+  background-color: var(--portfolio-bg);
+  color: var(--portfolio-ink);
 }
 
 .modal-cover-wrap {

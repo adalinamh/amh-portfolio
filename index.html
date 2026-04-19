@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <meta name="supported-color-schemes" content="light">
 
     <title>Portfolio d'Adalina Madeline-Helou</title>
 
@@ -14,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gabarito:wght@400..900&family=Slackside+One&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Gabarito:wght@400..900&amp;family=Slackside+One&amp;display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="./style/bulma-custom.css">
@@ -22,7 +24,7 @@
     <link rel="stylesheet" href="./style/fonts.css">
 
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&display=swap">
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&amp;display=swap">
 
 </head>
 
@@ -121,7 +123,7 @@
     <h1 class="title is-1 ml-6 mb-3 titre-section" id="formations">Formations</h1>
     <p class="subtitle is-4 ml-6 mt-3 mb-6 texte-section">Mon parcours scolaire en un coup d'œil. 👀</p>
 
-    <div class="card is-6 m-6">
+    <div class="card is-6 m-6 formation-card">
         <div class="card-content texte-section">
             <div class="is-flex is-justify-content-space-between is-align-items-center">
                 <p class="title is-5">BACHELOR UNIVERSITAIRE DE TECHNOLOGIE</p>
@@ -144,7 +146,7 @@
     </div>
 
 
-    <div class="card is-6 m-6">
+    <div class="card is-6 m-6 formation-card">
         <div class="card-content texte-section">
             <div class="is-flex is-justify-content-space-between is-align-items-center">
                 <p class="title is-5">BACCALAURÉAT SÉRIE GÉNÉRALE</p>
@@ -154,7 +156,7 @@
                 <p class="subtitle is-6">Anne-Marie Javouhey - Brest (29)</p>
                 <div class="is-flex is-align-items-center inline-gap-sm">
                     <figure class="image is-48x48 ">
-                        <img src="media/images/Logo-Groupe-Scolaire-Javouhey avec arrière-plan supprimé.webp"
+                        <img src="media/images/logo-groupe-scolaire-javouhey.webp"
                             alt="logo" />
                     </figure>
                     <p class="title is-5">Groupe Scolaire Javouhey</p>
@@ -176,10 +178,10 @@
                 encore. ✍️
             </p>
 
-            <div class="columns is-multiline is-centered">
+            <div class="columns is-multiline is-centered competence-grid">
 
                 <div class="column is-5">
-                    <div class="box has-text-centered p-6 box-competence">
+                    <div class="box has-text-centered p-6 box-competence competence-card">
                         <p class="title texte-section is-4"> Design Graphique </p>
                         <span class="button is-medium"
                             onclick="document.getElementById('modal-design').classList.add('is-active')">
@@ -190,7 +192,7 @@
 
 
                 <div class="column is-5">
-                    <div class="box has-text-centered p-6 box-competence">
+                    <div class="box has-text-centered p-6 box-competence competence-card">
                         <p class="title texte-section is-4"> Stratégie de Communication </p>
                         <span class="button is-medium"
                             onclick="document.getElementById('modal-strategie').classList.add('is-active')">
@@ -199,7 +201,7 @@
                 </div>
 
                 <div class="column is-5">
-                    <div class="box has-text-centered p-6 box-competence">
+                    <div class="box has-text-centered p-6 box-competence competence-card">
                         <p class="title texte-section is-4"> Audiovisuel</p>
                         <span class="button is-medium"
                             onclick="document.getElementById('modal-audiovisuel').classList.add('is-active')">Découvrir
@@ -208,7 +210,7 @@
                 </div>
 
                 <div class="column is-5">
-                    <div class="box has-text-centered p-6 box-competence">
+                    <div class="box has-text-centered p-6 box-competence competence-card">
                         <p class="title texte-section is-4"> Gestion de Projet</p>
                         <span class="button is-medium"
                             onclick="document.getElementById('modal-gestion').classList.add('is-active')">
@@ -229,10 +231,10 @@
 
         <section class="section">
             <div class="container">
-                <div class="columns is-multiline is-centered">
+                <div class="columns is-multiline is-centered project-grid">
 
-                    <div class="column is-5">
-                        <div class="card">
+                    <div class="column is-5 project-grid-item">
+                        <div class="card project-card">
                             <div class="card-image">
                                 <figure class="image is-16by9">
                                     <img src="media/images/miniaprojet1.webp" alt="projet1" />
@@ -243,7 +245,7 @@
                                     <p class="title is-5 mb-0"> Design d'Affiche, Festival "À l'West Fest"</p>
                                     <p class="subtitle is-6 mb-0">Janvier 2026</p>
                                 </div>
-                                <p class="mb-4">Affiche créée pour le festival multimédia À l'West Fest, dans le cadre
+                                <p class="mb-4 project-summary">Affiche créée pour le festival multimédia À l'West Fest, dans le cadre
                                     d'un projet universitaire en agence de communication à l'IUT de Lannion.</p>
                                 <div class="has-text-centered">
                                     <button class="button is-dark"
@@ -255,11 +257,11 @@
                         </div>
                     </div>
 
-                    <div class="column is-5">
-                        <div class="card">
+                    <div class="column is-5 project-grid-item">
+                        <div class="card project-card">
                             <div class="card-image">
                                 <figure class="image is-16by9">
-                                    <img src="media/images/Frame 127-2.webp" alt="projet2" />
+                                    <img src="media/images/frame-127-2.webp" alt="projet2" />
                                 </figure>
                             </div>
                             <div class="card-content texte-section">
@@ -267,7 +269,7 @@
                                     <p class="title is-5 mb-0">"Ouvrir la voix", court-métrage</p>
                                     <p class="subtitle is-6 mb-0">Décembre 2025</p>
                                 </div>
-                                <p class="mb-4"> Un court-métrage de sensibilisation au cyberharcèlement, à l'ambiance
+                                <p class="mb-4 project-summary"> Un court-métrage de sensibilisation au cyberharcèlement, à l'ambiance
                                     sombre et dystopique inspirée de Black Mirror.</p>
                                 <div class="has-text-centered">
                                     <button class="button is-dark"
@@ -279,8 +281,8 @@
                         </div>
                     </div>
 
-                    <div class="column is-5">
-                        <div class="card">
+                    <div class="column is-5 project-grid-item">
+                        <div class="card project-card">
                             <div class="card-image">
                                 <figure class="image is-16by9">
                                     <img src="media/images/projet3-2.webp" alt="projet3" />
@@ -291,7 +293,7 @@
                                     <p class="title is-5 mb-0">Les Insides, MMI Spark</p>
                                     <p class="subtitle is-6 mb-0">Actuellement</p>
                                 </div>
-                                <p class="mb-4"> Contenu vidéo, réseaux sociaux et vie de campus. Les coulisses du BDE
+                                <p class="mb-4 project-summary"> Contenu vidéo, réseaux sociaux et vie de campus. Les coulisses du BDE
                                     MMI Spark en images.</p>
                                 <div class="has-text-centered">
                                     <button class="button is-dark"
@@ -303,11 +305,11 @@
                         </div>
                     </div>
 
-                    <div class="column is-5">
-                        <div class="card">
+                    <div class="column is-5 project-grid-item">
+                        <div class="card project-card">
                             <div class="card-image">
                                 <figure class="image is-16by9">
-                                    <img src="media/images/Frame 129-2.webp" alt="projet4" />
+                                    <img src="media/images/frame-129-2.webp" alt="projet4" />
                                 </figure>
                             </div>
                             <div class="card-content texte-section">
@@ -315,7 +317,7 @@
                                     <p class="title is-5 mb-0"> Le projet Lanrivoaré</p>
                                     <p class="subtitle is-6 mb-0"> Décembre 2025 </p>
                                 </div>
-                                <p class="mb-4"> Valoriser un village de moins de 2000 habitants grâce au numérique. Un
+                                <p class="mb-4 project-summary"> Valoriser un village de moins de 2000 habitants grâce au numérique. Un
                                     défi de communication à l'échelle locale et internationale.</p>
                                 <div class="has-text-centered">
                                     <button class="button is-dark"
@@ -446,7 +448,7 @@
                                 <div class="box box-exemples" style="flex: 1;">
                                     <p class="title is-5 mb-3 titre-section">Exemple d'un portrait sur Illustrator</p>
                                     <figure class="image">
-                                        <img src="media/images/Plan de travail 1.webp"
+                                        <img src="media/images/plan-de-travail-1.webp"
                                             alt="Un projet d'un portrait réalisé sur Illustrator"
                                             style="border-radius: 8px;">
                                     </figure>
@@ -477,6 +479,7 @@
                                 </figure>
                             </div>
                         </div>
+                    </div>
                 </section>
             </div>
         </div>
@@ -541,11 +544,12 @@
                                         style="border-radius: 8px;" />
                                 </figure>
                                 <video controls style="width: 100%; border-radius: 8px;">
-                                    <source src="media/videos/été2023.mp4" type="video/mp4"
+                                    <source src="media/videos/ete-2023.mp4" type="video/mp4"
                                         alt="Vidéo d'un vlog de mes vacances d'été 2023" />
                                 </video>
                             </div>
                         </div>
+                    </div>
                 </section>
             </div>
         </div>
@@ -610,6 +614,7 @@
                                 </figure>
                             </div>
                         </div>
+                    </div>
                 </section>
             </div>
         </div>
@@ -725,7 +730,7 @@
                         </div>
                         <div class="box mb-5">
                             <figure class="image mb-3">
-                                <img src="media/images/étapeAWF.webp" alt="Toutes les maquettes du projet À l'West Fest"
+                                <img src="media/images/etape-awf.webp" alt="Toutes les maquettes du projet À l'West Fest"
                                     style="border-radius: 8px;">
                             </figure>
                         </div>
@@ -795,7 +800,7 @@
 
                     <div class="modal-cover-wrap">
                         <figure class="image is-3by1">
-                            <img src="media/images/Frame 127-2.webp" alt="Cover du projet 2" class="modal-cover-image">
+                            <img src="media/images/frame-127-2.webp" alt="Cover du projet 2" class="modal-cover-image">
                         </figure>
                         <div class="modal-cover-title">
                             <p class="title is-2 titre-projet">"Ouvrir la voix", le court-métrage</p>
@@ -867,7 +872,7 @@
                                         <p class="title is-6 mt-4 titre-section">Exemple de notre note de traitement</p>
                                         <div
                                             style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; align-items: center; justify-content: center;">
-                                            <img src="media/images/ndt-entrée.webp" alt="note de traitement"
+                                            <img src="media/images/ndt-entree.webp" alt="note de traitement"
                                                 style="border-radius: 8px; width: 200px;" />
                                             <img src="media/images/ndt-jouer.webp" alt="note de traitement"
                                                 style="border-radius: 8px; width: 200px;" />
@@ -1075,7 +1080,7 @@
                                         l'attractivité du BDE MMI Spark.
                                     </p>
 
-                                    <a href="https://www.instagram.com/bde.mmi.lannion?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                                    <a href="https://www.instagram.com/bde.mmi.lannion?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw=="
                                         target="_blank" class="button-custom">
                                         <span class="arrow-circle">→</span>
                                         <span class="btn-text">Explorer la série</span>
@@ -1104,7 +1109,7 @@
             
                     <div class="modal-cover-wrap">
                         <figure class="image is-3by1 ">
-                            <img src="media/images/Frame 129-2.webp" alt="cover projet4" class="modal-cover-image">
+                            <img src="media/images/frame-129-2.webp" alt="cover projet4" class="modal-cover-image">
                         </figure>
 
                         <div class="modal-cover-title">
