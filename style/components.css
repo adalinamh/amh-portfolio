@@ -47,7 +47,6 @@
 
 .card {
   height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: var(--portfolio-card) !important;
@@ -194,6 +193,13 @@
   gap: 1rem;
 }
 
+.formation-card {
+  width: auto;
+  max-width: calc(100% - 3rem);
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
 .formation-card,
 .project-card,
 .formation-card .title,
@@ -208,6 +214,10 @@
 .competence-grid .column,
 .project-grid-item {
   display: flex;
+}
+
+.project-grid-item .project-card {
+  width: 100%;
 }
 
 .project-card .project-summary {

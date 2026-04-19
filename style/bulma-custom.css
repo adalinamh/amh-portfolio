@@ -177,6 +177,18 @@ iframe {
   gap: 0.5rem;
 }
 
+#competences {
+  background-color: var(--portfolio-blush) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+#competences .container {
+  max-width: 1200px;
+}
+
 .modal-card-custom {
   width: 90%;
   max-width: 1100px;
