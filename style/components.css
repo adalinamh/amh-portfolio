@@ -50,7 +50,20 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  background-color: var(--portfolio-card) !important;
+  color: var(--portfolio-ink) !important;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(45, 71, 62, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card *,
+.box *,
+.box-competence *,
+.box-details *,
+.box-exemples * {
+  color: inherit;
 }
 
 .card-image img {
@@ -68,6 +81,8 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  background-color: var(--portfolio-card) !important;
+  color: var(--portfolio-ink) !important;
 }
 
 .card-content .has-text-centered {
@@ -76,6 +91,7 @@
 
 .box {
   background-color: var(--portfolio-blush);
+  color: var(--portfolio-ink) !important;
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -101,12 +117,14 @@
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #f4944a !important;
+  color: var(--portfolio-accent-deep) !important;
 }
 
 .box-details {
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background-color: #ffe2bf !important;
+  color: var(--portfolio-accent-deep) !important;
 }
 
 .box-competence .button {
@@ -174,6 +192,17 @@
 .formation-card .card-content,
 .project-card .card-content {
   gap: 1rem;
+}
+
+.formation-card,
+.project-card,
+.formation-card .title,
+.formation-card .subtitle,
+.formation-card .content,
+.project-card .title,
+.project-card .subtitle,
+.project-card p {
+  color: var(--portfolio-ink) !important;
 }
 
 .competence-grid .column,

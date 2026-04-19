@@ -1,5 +1,6 @@
 :root {
   --portfolio-bg: #F3EFE4;
+  --portfolio-card: #FFF9F1;
   --portfolio-blush: #F8CABA;
   --portfolio-accent: #E1903E;
   --portfolio-accent-strong: #9C4A14;
@@ -8,12 +9,12 @@
   --portfolio-ink: #131313;
   --portfolio-muted: #5F5F5F;
   --portfolio-shadow: #2D473E;
-  color-scheme: light;
+  color-scheme: only light;
 }
 
 html {
   scroll-behavior: smooth;
-  color-scheme: light;
+  color-scheme: only light;
   background-color: var(--portfolio-bg);
 }
 
@@ -21,6 +22,7 @@ body {
   background-color: var(--portfolio-bg);
   color: var(--portfolio-ink);
   min-height: 100vh;
+  forced-color-adjust: none;
 }
 
 img,
@@ -33,7 +35,19 @@ iframe {
 .subtitle,
 .content,
 .modal-card-title {
-  color: var(--portfolio-ink);
+  color: var(--portfolio-ink) !important;
+}
+
+.section,
+.modal,
+.modal-card,
+.modal-card-custom,
+.modal-card-head,
+.modal-card-body,
+.content,
+.texte-section,
+.has-text-grey {
+  forced-color-adjust: none;
 }
 
 .navbar {
